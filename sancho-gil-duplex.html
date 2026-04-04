@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Duplex Sancho y Gil | Alquiler Calatayud</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#031632",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1a2b48",
+                        "on-primary-container": "#8293b5",
+                        "secondary": "#585f69",
+                        "background": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#452300",
+                        "on-tertiary-container": "#bf8654",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-tertiary-fixed": "#2e1500"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .editorial-shadow { box-shadow: 0px 20px 40px rgba(3, 22, 50, 0.06); }
+        .glass-nav { backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+
+<nav class="fixed top-0 w-full z-50 bg-white/70 glass-nav shadow-xl shadow-[#031632]/5">
+    <div class="flex justify-between items-center h-20 px-8 w-full max-w-screen-2xl mx-auto">
+        <div class="flex items-center gap-12">
+            <a href="index.html" class="font-serif text-2xl font-bold text-[#031632] tracking-tighter">Alquiler Calatayud</a>
+            <div class="hidden md:flex gap-8">
+                <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="index.html">Inicio</a>
+                <a class="font-serif text-lg tracking-tight font-medium text-[#031632] border-b-2 border-[#031632] pb-1" href="index.html#viviendas">Viviendas</a>
+                <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="empresas.html">Empresas</a>
+                <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-6">
+            <button onclick="document.getElementById('property-dates').focus()" class="bg-primary text-on-primary px-8 py-3 rounded-full font-label text-sm font-bold tracking-wide scale-95 active:scale-100 transition-transform">Consultar Disponibilidad</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-20">
+    <section class="relative min-h-[700px] flex flex-col items-center justify-center px-8 py-12 overflow-hidden">
+        <div class="max-w-screen-2xl w-full grid grid-cols-12 gap-8 items-center relative z-10">
+            <div class="col-span-12 lg:col-span-5 z-20">
+                <span class="inline-block py-1 px-4 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold tracking-widest mb-6">ESPACIO & DISEÑO</span>
+                <h1 class="font-headline text-6xl lg:text-8xl text-primary tracking-tight leading-none mb-8">Sancho y Gil Duplex.</h1>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="material-symbols-outlined text-on-tertiary-container" data-icon="apartment">apartment</span>
+                    <p class="font-body text-xl text-secondary">Casco Histórico, Calatayud — Calidad en Dos Niveles</p>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-surface-container-low px-6 py-4 rounded-xl editorial-shadow">
+                        <span class="block text-xs font-bold tracking-tighter text-on-tertiary-container mb-1 uppercase">Superficie</span>
+                        <span class="font-headline text-2xl text-primary">Dos Plantas Abiertas</span>
+                    </div>
+                    <div class="bg-surface-container-low px-6 py-4 rounded-xl editorial-shadow">
+                        <span class="block text-xs font-bold tracking-tighter text-on-tertiary-container mb-1 uppercase">Conectividad</span>
+                        <span class="font-headline text-2xl text-primary">WiFi Incluida</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-7 relative">
+                <div class="aspect-[4/5] md:aspect-video rounded-xl overflow-hidden editorial-shadow scale-105 transform origin-right bg-surface-container flex items-center justify-center">
+                    <span class="text-secondary italic">Tu foto aquí (Interior Duplex)</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-container opacity-20 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="py-12 px-8 bg-surface-container-low">
+        <div class="max-w-screen-2xl mx-auto border-l-4 border-primary pl-8">
+            <span class="text-xs font-bold tracking-widest text-[#bf8654] uppercase mb-2 block">Lo más destacado</span>
+            <h2 class="font-headline text-3xl md:text-5xl text-primary italic leading-tight">
+                "Amplitud en dos niveles, <br/>la solución perfecta para el alojamiento de cuadrillas."
+            </h2>
+        </div>
+    </section>
+
+    <!-- Bento Property Overview -->
+    <section class="bg-surface py-24 px-8">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Description Block -->
+                <div class="md:col-span-2 bg-surface-container-lowest p-12 rounded-xl editorial-shadow flex flex-col justify-center">
+                    <h2 class="font-headline text-4xl text-primary mb-6 italic">Amplitud sin compromisos.</h2>
+                    <p class="font-body text-lg text-secondary leading-relaxed">
+                        Nuestra vivienda de mayor envergadura ofrece una distribución vertical que separa con maestría la zona social del área de descanso. Con techos altos y un diseño que respeta la volumetría del casco histórico, este duplex es la elección perfecta para familias o grupos corporativos que valoran la independencia y el confort de alta gama.
+                    </p>
+                </div>
+                <!-- Stats Grid -->
+                <div class="bg-primary-container p-12 rounded-xl editorial-shadow flex flex-col justify-between text-on-primary">
+                    <span class="material-symbols-outlined text-4xl text-tertiary-fixed font-bold text-white" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span>
+                    <div>
+                        <h3 class="font-headline text-3xl mb-2 text-white">Equipos de Trabajo</h3>
+                        <p class="font-body text-sm opacity-80 text-white/70">Espacio optimizado para la convivencia y el descanso de cuadrillas.</p>
+                    </div>
+                </div>
+                <div class="bg-surface-container p-12 rounded-xl flex flex-col justify-between border border-outline-variant/10">
+                    <span class="material-symbols-outlined text-4xl text-primary" data-icon="deck" style="font-variation-settings: 'FILL' 1;">deck</span>
+                    <div>
+                        <h3 class="font-headline text-3xl text-primary mb-2">Vistas Urbanas</h3>
+                        <p class="font-body text-sm text-secondary">Perspectivas únicas del patrimonio mudéjar desde la planta superior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Grid -->
+    <section class="py-24 px-8">
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div>
+                <h2 class="font-headline text-5xl text-primary mb-12 leading-tight">Servicios <br/>Exclusivos</h2>
+                <ul class="space-y-8">
+                    <li class="flex gap-6 items-start">
+                        <div class="p-4 bg-tertiary-fixed rounded-full">
+                            <span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="local_laundry_service">local_laundry_service</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl text-primary font-bold">Lavandería Pro</h4>
+                            <p class="text-secondary leading-relaxed">Zona de lavado y secado independiente para facilitar estancias prolongadas de empresa.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-6 items-start">
+                        <div class="p-4 bg-tertiary-fixed rounded-full">
+                            <span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="shutter_speed">shutter_speed</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl text-primary font-bold">Auto Check-in</h4>
+                            <p class="text-secondary leading-relaxed">Acceso mediante código de seguridad inteligente, disponible 24/7 sin esperas.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-surface-container-high aspect-square rounded-xl overflow-hidden flex items-center justify-center relative editorial-shadow">
+                 <span class="text-secondary italic text-xl">Tu foto aquí</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="py-24 px-8 bg-primary">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12 items-center justify-between text-on-primary">
+            <div class="max-w-xl">
+                <h2 class="font-headline text-5xl mb-6 tracking-tight text-white">Su duplex en Calatayud.</h2>
+                <p class="font-body text-xl opacity-70 mb-12 text-white/70">Gestión profesional de alojamientos temporales con facturación institucional disponible.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input id="property-dates" class="bg-white/10 border border-white/20 text-white rounded-full px-8 py-4 focus:ring-2 focus:ring-tertiary-fixed outline-none placeholder:text-white/40 min-w-[280px]" placeholder="Seleccionar Fechas" type="text"/>
+                    <button onclick="handlePropertyConsult()" class="bg-tertiary-fixed text-on-tertiary-fixed px-10 py-4 rounded-full font-label font-bold tracking-widest hover:opacity-90 transition-all active:scale-95">RESERVAR DUPLEX</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full border-t border-slate-200 bg-[#f8f9fa] py-12 text-center">
+    <div id="contacto" class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="text-left font-serif text-xl font-bold text-primary">Alquiler Calatayud</div>
+        <div class="text-center space-y-2">
+            <p class="text-slate-500 text-sm">Tel: +34 633 202 853</p>
+            <p class="text-slate-500 text-sm">Email: alquilercalatayud@hotmail.com</p>
+        </div>
+        <div class="text-right text-slate-500 text-xs">© 2026 Alquiler Calatayud | Sancho y Gil Duplex.</div>
+    </div>
+</footer>
+
+<script>
+    // Initialize Calendar
+    flatpickr("#property-dates", {
+        mode: "range",
+        minDate: "today",
+        dateFormat: "d/m/Y",
+        locale: {
+            rangeSeparator: " hasta "
+        }
+    });
+
+    // Handle Property Consultation
+    function handlePropertyConsult() {
+        const property = "Duplex Sancho y Gil";
+        const dates = document.getElementById('property-dates').value;
+        
+        if(!dates) {
+            alert("Por favor, seleccione las fechas para su estancia en " + property);
+            document.getElementById('property-dates').focus();
+            return;
+        }
+
+        const subject = encodeURIComponent("Reserva Duplex - " + property);
+        const body = encodeURIComponent(
+            "Hola,\n\nDeseo consultar la disponibilidad para mi estancia en:\n" +
+            "Vivienda: " + property + "\n" +
+            "Fechas elegidas: " + dates + "\n\n" +
+            "Por favor, facilítenme más información sobre tarifas y proceso de reserva.\n\nSaludos."
+        );
+        
+        window.location.href = "mailto:alquilercalatayud@hotmail.com?subject=" + subject + "&body=" + body;
+    }
+</script>
+
+</body>
+</html>

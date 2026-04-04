@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Empresas y Corporativo | Alquiler Calatayud</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#031632",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1a2b48",
+                        "secondary": "#585f69",
+                        "background": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-tertiary-fixed": "#2e1500"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .editorial-shadow { box-shadow: 0px 20px 40px rgba(3, 22, 50, 0.06); }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+
+<nav class="bg-white/70 backdrop-blur-xl sticky top-0 z-50 shadow-sm">
+    <div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
+        <a href="index.html" class="font-serif text-2xl font-bold tracking-tighter text-primary">Alquiler Calatayud</a>
+            <div class="hidden md:flex gap-8">
+                <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="index.html">Inicio</a>
+                <a class="font-serif text-lg tracking-tight font-medium text-[#031632] border-b-2 border-[#031632] pb-1" href="index.html#viviendas">Viviendas</a>
+                <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="empresas.html">Empresas</a>
+                <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="#contacto">Contacto</a>
+            </div>
+    </div>
+</nav>
+
+<main class="max-w-7xl mx-auto px-8 py-20">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+        <div>
+            <span class="inline-block py-1 px-3 bg-primary text-white text-xs font-bold tracking-widest rounded-full uppercase mb-6">Partnerships Corporativos</span>
+            <h1 class="font-headline text-5xl lg:text-7xl text-primary mb-12 leading-tight">Soluciones para <br/>el Alojamiento del Staff</h1>
+            <ul class="space-y-8">
+                <li class="flex gap-6 items-start">
+                    <div class="p-4 bg-tertiary-fixed rounded-full">
+                        <span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="description">description</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline text-xl text-primary font-bold">Facturación Directa</h4>
+                        <p class="text-secondary leading-relaxed">Gestión transparente: emitimos facturas para todas las estancias para facilitar la administración de su empresa.</p>
+                    </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                    <div class="p-4 bg-tertiary-fixed rounded-full">
+                        <span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="work">work</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline text-xl text-primary font-bold">Conectividad Integrada</h4>
+                        <p class="text-secondary leading-relaxed">Conexión WiFi estable en todas las viviendas para la comodidad de sus trabajadores durante su estancia.</p>
+                    </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                    <div class="p-4 bg-tertiary-fixed rounded-full">
+                        <span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="location_city">location_city</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline text-xl text-primary font-bold">Logística Estratégica</h4>
+                        <p class="text-secondary leading-relaxed">Ubicación a menos de 10 min de las principales polígonos industriales y accesos por carretera.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="relative">
+            <div class="bg-surface-container shadow-2xl p-12 rounded-3xl border border-outline-variant/10">
+                <h3 class="font-headline text-3xl text-primary mb-6">Solicitud Corporativa</h3>
+                <p class="text-secondary mb-8">Contamos con tarifas reducidas para empresas con proyectos de media y larga duración (+15 días).</p>
+                <form class="space-y-4">
+                    <input class="w-full bg-white border-outline-variant rounded-xl p-4 focus:ring-primary" placeholder="Nombre de la Institución" type="text"/>
+                    <input class="w-full bg-white border-outline-variant rounded-xl p-4 focus:ring-primary" placeholder="Email de Contacto" type="email"/>
+                    <textarea class="w-full bg-white border-outline-variant rounded-xl p-4 h-32 focus:ring-primary" placeholder="Detalles del proyecto (fechas y nº de empleados)"></textarea>
+                    <button class="w-full bg-primary text-white font-bold py-4 rounded-xl hover:opacity-90 transition-all">Solicitar Dossier de Tarifas</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-32 bg-primary text-white p-16 rounded-[40px] text-center">
+        <h2 class="font-headline text-4xl mb-6">Optimice el descanso de su equipo.</h2>
+        <p class="max-w-2xl mx-auto opacity-70 text-lg mb-10">Un trabajador que descansa en un entorno de calidad es un profesional más eficiente. Resolvemos el alojamiento de sus cuadrillas en Calatayud.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-full">
+                <span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+                <span class="text-xs font-bold uppercase tracking-widest">Self Check-in 24h</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/10 px-6 py-3 rounded-full">
+                <span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+                <span class="text-xs font-bold uppercase tracking-widest">Limpieza Semanal Incl.</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-surface-container py-12 px-8 mt-20">
+    <div id="contacto" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+        <div class="font-serif text-xl font-bold text-primary">Alquiler Calatayud</div>
+        <div class="text-center space-y-2">
+            <p class="text-slate-500 text-sm">Tel: +34 633 202 853</p>
+            <p class="text-slate-500 text-sm">Email: alquilercalatayud@hotmail.com</p>
+        </div>
+        <div class="md:text-right text-slate-500 text-xs">© 2026 Alquiler Calatayud | Servicio Corporativo.</div>
+    </div>
+</footer>
+
+</body>
+</html>
