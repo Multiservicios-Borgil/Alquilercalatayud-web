@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Multiservicios-Borgil/Alquilercalatayud-web # Será actualizado por el usuario
+  repo: https://github.com/Multiservicios-Borgil/Alquilercalatayud-web # Será actualizado por el usuario
   branch: main
   base_url: https://api.github.com
 
