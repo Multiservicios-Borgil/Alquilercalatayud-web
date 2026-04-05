@@ -57,7 +57,7 @@
 
 <nav class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl docked full-width top-0 sticky z-50 no-border shadow-[0px_20px_40px_rgba(3,22,50,0.04)]">
     <div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
-        <div class="font-serif text-2xl font-bold tracking-tighter text-[#1A2B48] dark:text-white">
+        <div class="font-serif text-2xl font-bold tracking-tighter text-[#1A2B48] dark:text-white" data-cms="site.name">
             Alquiler Calatayud
         </div>
         <div class="hidden md:flex items-center space-x-8">
@@ -75,12 +75,12 @@
 <header class="relative pt-12 pb-24 overflow-hidden">
     <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 z-10">
-            <span class="inline-block py-1 px-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold tracking-widest rounded-full uppercase mb-6">Mudéjar & Moderno</span>
+            <span class="inline-block py-1 px-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold tracking-widest rounded-full uppercase mb-6" data-cms="home.hero.badge">Mudéjar & Moderno</span>
             <h1 class="text-5xl md:text-6xl font-bold text-primary leading-[1.2] mb-6 -tracking-[0.02em]">
-                Viviendas en el corazón de Calatayud <br/>
-                <span class="text-on-primary-container italic font-normal text-3xl md:text-4xl block mt-4 tracking-tight">con todo el equipamiento necesario para su estancia</span>
+                <span data-cms="home.hero.title">Viviendas en el corazón de Calatayud</span> <br/>
+                <span class="text-on-primary-container italic font-normal text-3xl md:text-4xl block mt-4 tracking-tight" data-cms="home.hero.subtitle">con todo el equipamiento necesario para su estancia</span>
             </h1>
-            <p class="text-lg text-secondary mb-10 max-w-lg leading-relaxed">
+            <p class="text-lg text-secondary mb-10 max-w-lg leading-relaxed" data-cms="home.hero.description">
                 Viviendas turísticas y corporativas en los distritos históricos de Calatayud. Diseñadas para la utilidad moderna y el descanso impecable.
             </p>
             
@@ -105,7 +105,7 @@
         </div>
         <div class="lg:col-span-6 relative">
             <div class="rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl relative">
-                <img class="w-full h-full object-cover" src="img/hero-calatayud-classy.png" alt="Panorámica clásica de Calatayud"/>
+                <img class="w-full h-full object-cover" data-cms="home.hero.image" src="img/hero-calatayud-classy.png" alt="Panorámica clásica de Calatayud"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
             </div>
             <!-- Asymmetric Floating Element -->
@@ -128,8 +128,8 @@
                     <span class="material-symbols-outlined text-3xl" data-icon="wifi">wifi</span>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-2">Conectividad WiFi</h3>
-                    <p class="text-secondary text-sm leading-relaxed">Conexión WiFi estable en todas las viviendas para la comodidad de sus trabajadores.</p>
+                    <h3 class="text-xl font-bold mb-2" data-cms="home.services.0.title">Conectividad WiFi</h3>
+                    <p class="text-secondary text-sm leading-relaxed" data-cms="home.services.0.description">Conexión WiFi estable en todas las viviendas para la comodidad de sus trabajadores.</p>
                 </div>
             </div>
             <div class="flex gap-6">
@@ -172,13 +172,13 @@
                     </div>
                 </div>
                 <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-2xl font-bold text-primary">Apartamento Sancho y Gil</h3>
+                    <h3 class="text-2xl font-bold text-primary" data-cms="properties.sancho-gil-apt.name">Apartamento Sancho y Gil</h3>
                     <div class="flex items-center gap-1">
                         <span class="material-symbols-outlined text-on-tertiary-container text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="text-sm font-bold">4.95</span>
+                        <span class="text-sm font-bold" data-cms="properties.sancho-gil-apt.rating">4.95</span>
                     </div>
                 </div>
-                <p class="text-secondary text-sm mb-4">Casco Histórico • Cerca de Santa María</p>
+                <p class="text-secondary text-sm mb-4" data-cms="properties.sancho-gil-apt.location">Casco Histórico • Cerca de Santa María</p>
                 <div class="flex items-center justify-between">
                     <p class="font-bold text-primary">Ver Detalles</p>
                     <span class="text-xs font-bold text-on-primary-container border border-outline-variant/30 px-2 py-1 rounded">WiFi Incluido</span>
@@ -193,13 +193,13 @@
                     </div>
                 </div>
                 <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-2xl font-bold text-primary">Duplex Sancho y Gil</h3>
+                    <h3 class="text-2xl font-bold text-primary" data-cms="properties.sancho-gil-duplex.name">Duplex Sancho y Gil</h3>
                     <div class="flex items-center gap-1">
                         <span class="material-symbols-outlined text-on-tertiary-container text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="text-sm font-bold">4.98</span>
+                        <span class="text-sm font-bold" data-cms="properties.sancho-gil-duplex.rating">4.98</span>
                     </div>
                 </div>
-                <p class="text-secondary text-sm mb-4">Dos Plantas • Diseño Contemporáneo</p>
+                <p class="text-secondary text-sm mb-4" data-cms="properties.sancho-gil-duplex.location">Dos Plantas • Diseño Contemporáneo</p>
                 <div class="flex items-center justify-between">
                     <p class="font-bold text-primary">Ver Detalles</p>
                     <span class="text-xs font-bold text-on-primary-container border border-outline-variant/30 px-2 py-1 rounded">2 Baños</span>
@@ -214,13 +214,13 @@
                     </div>
                 </div>
                 <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-2xl font-bold text-primary">Apartamento San Andrés</h3>
+                    <h3 class="text-2xl font-bold text-primary" data-cms="properties.san-andres.name">Apartamento San Andrés</h3>
                     <div class="flex items-center gap-1">
                         <span class="material-symbols-outlined text-on-tertiary-container text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="text-sm font-bold">4.92</span>
+                        <span class="text-sm font-bold" data-cms="properties.san-andres.rating">4.92</span>
                     </div>
                 </div>
-                <p class="text-secondary text-sm mb-4">Zona San Andrés • Muy Luminoso</p>
+                <p class="text-secondary text-sm mb-4" data-cms="properties.san-andres.location">Zona San Andrés • Muy Luminoso</p>
                 <div class="flex items-center justify-between">
                     <p class="font-bold text-primary">Ver Detalles</p>
                     <span class="text-xs font-bold text-on-primary-container border border-outline-variant/30 px-2 py-1 rounded">Confort SAT</span>
@@ -238,9 +238,9 @@
             </div>
         </div>
         <div class="order-1 lg:order-2">
-            <span class="text-on-tertiary-container font-bold text-xs tracking-widest uppercase mb-4 block">Alquiler para Empresas</span>
-            <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Optimizado para el Trabajo. <br/>Construido para el Descanso.</h2>
-            <p class="text-secondary mb-8 leading-relaxed">
+            <span class="text-on-tertiary-container font-bold text-xs tracking-widest uppercase mb-4 block" data-cms="home.company_section.badge">Alquiler para Empresas</span>
+            <h2 class="text-4xl font-bold text-primary mb-6 leading-tight" data-cms="home.company_section.title">Optimizado para el Trabajo. <br/>Construido para el Descanso.</h2>
+            <p class="text-secondary mb-8 leading-relaxed" data-cms="home.company_section.description">
                 Entendemos los requisitos del viaje corporativo. Nuestras propiedades están ubicadas a pocos minutos de los principales centros industriales, con autocheck-in fluido y entornos silenciosos.
             </p>
             <ul class="space-y-4 mb-10">
@@ -331,6 +331,22 @@
         
         window.location.href = "mailto:alquilercalatayud@hotmail.com?subject=" + subject + "&body=" + body;
     }
+</script>
+
+<script src="js/cms-loader.js"></script>
+
+<!-- Netlify Identity Widget -->
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 
 </body>

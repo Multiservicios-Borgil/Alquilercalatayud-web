@@ -41,7 +41,7 @@
 
 <nav class="bg-white/70 backdrop-blur-xl sticky top-0 z-50 shadow-sm">
     <div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
-        <a href="index.html" class="font-serif text-2xl font-bold tracking-tighter text-primary">Alquiler Calatayud</a>
+        <a href="index.html" class="font-serif text-2xl font-bold tracking-tighter text-primary" data-cms="site.name">Alquiler Calatayud</a>
             <div class="hidden md:flex gap-8">
                 <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="index.html">Inicio</a>
                 <a class="font-serif text-lg tracking-tight font-medium text-[#031632] border-b-2 border-[#031632] pb-1" href="index.html#viviendas">Viviendas</a>
@@ -54,8 +54,8 @@
 <main class="max-w-7xl mx-auto px-8 py-20">
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
         <div>
-            <span class="inline-block py-1 px-3 bg-primary text-white text-xs font-bold tracking-widest rounded-full uppercase mb-6">Partnerships Corporativos</span>
-            <h1 class="font-headline text-5xl lg:text-7xl text-primary mb-12 leading-tight">Soluciones para <br/>el Alojamiento del Staff</h1>
+            <span class="inline-block py-1 px-3 bg-primary text-white text-xs font-bold tracking-widest rounded-full uppercase mb-6" data-cms="empresas.hero.badge">Partnerships Corporativos</span>
+            <h1 class="font-headline text-5xl lg:text-7xl text-primary mb-12 leading-tight" data-cms="empresas.hero.title">Soluciones para <br/>el Alojamiento del Staff</h1>
             <ul class="space-y-8">
                 <li class="flex gap-6 items-start">
                     <div class="p-4 bg-tertiary-fixed rounded-full">
@@ -89,7 +89,7 @@
         <div class="relative">
             <div class="bg-surface-container shadow-2xl p-12 rounded-3xl border border-outline-variant/10">
                 <h3 class="font-headline text-3xl text-primary mb-6">Solicitud Corporativa</h3>
-                <p class="text-secondary mb-8">Contamos con tarifas reducidas para empresas con proyectos de media y larga duración (+15 días).</p>
+                <p class="text-secondary mb-8" data-cms="empresas.hero.description">Contamos con tarifas reducidas para empresas con proyectos de media y larga duración (+15 días).</p>
                 <form class="space-y-4">
                     <input class="w-full bg-white border-outline-variant rounded-xl p-4 focus:ring-primary" placeholder="Nombre de la Institución" type="text"/>
                     <input class="w-full bg-white border-outline-variant rounded-xl p-4 focus:ring-primary" placeholder="Email de Contacto" type="email"/>
@@ -126,6 +126,11 @@
         <div class="md:text-right text-slate-500 text-xs">© 2026 Alquiler Calatayud | Servicio Corporativo.</div>
     </div>
 </footer>
+
+<script src="js/cms-loader.js"></script>
+
+<!-- Netlify Identity Widget -->
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </body>
 </html>

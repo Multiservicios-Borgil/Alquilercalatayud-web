@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "Alquiler Calatayud",
+    "contact": {
+      "phone": "+34 633 202 853",
+      "email": "alquilercalatayud@hotmail.com"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Mudéjar & Moderno",
+      "title": "Viviendas en el corazón de Calatayud",
+      "subtitle": "con todo el equipamiento necesario para su estancia",
+      "description": "Viviendas turísticas y corporativas en los distritos históricos de Calatayud. Diseñadas para la utilidad moderna y el descanso impecable.",
+      "image": "img/hero-calatayud-classy.png"
+    },
+    "services": [
+      {
+        "icon": "wifi",
+        "title": "Conectividad WiFi",
+        "description": "Conexión WiFi estable en todas las viviendas para la comodidad de sus trabajadores."
+      },
+      {
+        "icon": "skillet",
+        "title": "Cocina Equipada",
+        "description": "Espacios totalmente equipados con electrodomésticos modernos para una estancia larga cómoda."
+      },
+      {
+        "icon": "near_me",
+        "title": "Ubicación Central",
+        "description": "Propiedades a pocos pasos de los nodos de transporte y zonas industriales de Calatayud."
+      }
+    ],
+    "company_section": {
+      "badge": "Alquiler para Empresas",
+      "title": "Optimizado para el Trabajo. Construido para el Descanso.",
+      "description": "Entendemos los requisitos del viaje corporativo. Nuestras propiedades están ubicadas a pocos minutos de los principales centros industriales, con autocheck-in fluido y entornos silenciosos.",
+      "bullets": [
+        "Facturación disponible para todas las estancias corporativas",
+        "Limpieza periódica opcional para equipos de trabajo",
+        "Descuentos por estancias de media y larga duración"
+      ]
+    }
+  },
+  "empresas": {
+    "hero": {
+      "badge": "Partnerships Corporativos",
+      "title": "Soluciones para el Alojamiento del Staff",
+      "description": "Contamos con tarifas reducidas para empresas con proyectos de media y larga duración (+15 días)."
+    },
+    "advantages": [
+      {
+        "icon": "description",
+        "title": "Facturación Directa",
+        "description": "Gestión transparente: emitimos facturas para todas las estancias para facilitar la administración de su empresa."
+      },
+      {
+        "icon": "work",
+        "title": "Conectividad Integrada",
+        "description": "Conexión WiFi estable en todas las viviendas para la comodidad de sus trabajadores durante su estancia."
+      },
+      {
+        "icon": "location_city",
+        "title": "Logística Estratégica",
+        "description": "Ubicación a menos de 10 min de las principales polígonos industriales y accesos por carretera."
+      }
+    ]
+  },
+  "properties": {
+    "sancho-gil-apt": {
+      "name": "Apartamento Sancho y Gil",
+      "rating": "4.95",
+      "tags": ["Nuevo Diseño", "WiFi Incluido"],
+      "location": "Casco Histórico • Cerca de Santa María",
+      "description_long": "Apartamento moderno en el corazón histórico de Calatayud. Ideal para estancias profesionales.",
+      "gallery": [
+        {"title": "Imagen Principal", "src": "img/sancho-gil-1.jpg"},
+        {"title": "Salón", "src": "img/sancho-gil-2.jpg"}
+      ],
+      "amenities": ["WiFi Alta Velocidad", "Cocina Completa", "Zona de Trabajo"]
+    },
+    "sancho-gil-duplex": {
+      "name": "Duplex Sancho y Gil",
+      "rating": "4.98",
+      "tags": ["Ideal Familias", "2 Baños"],
+      "location": "Dos Plantas • Diseño Contemporáneo",
+      "description_long": "Espacioso duplex con dos plantas, diseñado para ofrecer el máximo confort posible.",
+      "gallery": [
+        {"title": "Salón / Planta Baja", "src": "img/duplex-1.jpg"}
+      ],
+      "amenities": ["Dos Baños", "Terraza Privada", "Climatización"]
+    },
+    "san-andres": {
+      "name": "Apartamento San Andrés",
+      "rating": "4.92",
+      "tags": ["Más Solicitado", "Confort SAT"],
+      "location": "Zona San Andrés • Muy Luminoso",
+      "description_long": "Ubicación estratégica en la zona de San Andrés, cerca de servicios y transporte.",
+      "gallery": [
+        {"title": "Salón Comedor", "src": "img/andres-1.jpg"}
+      ],
+      "amenities": ["Parking Fácil", "Luz Natural", "Cerca de Polígonos"]
+    }
+  }
+}

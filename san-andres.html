@@ -50,7 +50,7 @@
 <nav class="fixed top-0 w-full z-50 bg-white/70 glass-nav shadow-xl shadow-[#031632]/5">
     <div class="flex justify-between items-center h-20 px-8 w-full max-w-screen-2xl mx-auto">
         <div class="flex items-center gap-12">
-            <a href="index.html" class="font-serif text-2xl font-bold text-[#031632] tracking-tighter">Alquiler Calatayud</a>
+            <a href="index.html" class="font-serif text-2xl font-bold text-[#031632] tracking-tighter" data-cms="site.name">Alquiler Calatayud</a>
             <div class="hidden md:flex gap-8">
                 <a class="font-serif text-lg tracking-tight font-medium text-slate-500 hover:text-[#031632] transition-colors" href="index.html">Inicio</a>
                 <a class="font-serif text-lg tracking-tight font-medium text-[#031632] border-b-2 border-[#031632] pb-1" href="index.html#viviendas">Viviendas</a>
@@ -69,10 +69,10 @@
         <div class="max-w-screen-2xl w-full grid grid-cols-12 gap-8 items-center relative z-10">
             <div class="col-span-12 lg:col-span-5 z-20">
                 <span class="inline-block py-1 px-4 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold tracking-widest mb-6">MÁXIMA FUNCIONALIDAD</span>
-                <h1 class="font-headline text-6xl lg:text-8xl text-primary tracking-tight leading-none mb-8">Apartamento San Andrés.</h1>
+                <h1 class="font-headline text-6xl lg:text-8xl text-primary tracking-tight leading-none mb-8" data-cms="properties.san-andres.name">Apartamento San Andrés.</h1>
                 <div class="flex items-center gap-4 mb-8">
                     <span class="material-symbols-outlined text-on-tertiary-container" data-icon="location_on">location_on</span>
-                    <p class="font-body text-xl text-secondary">Eje San Andrés, Calatayud — Confort SAT Certificado</p>
+                    <p class="font-body text-xl text-secondary" data-cms="properties.san-andres.location">Eje San Andrés, Calatayud — Confort SAT Certificado</p>
                 </div>
                 <div class="flex flex-wrap gap-4">
                     <div class="bg-surface-container-low px-6 py-4 rounded-xl editorial-shadow">
@@ -109,7 +109,7 @@
                 <!-- Description Block -->
                 <div class="md:col-span-2 bg-surface-container-lowest p-12 rounded-xl editorial-shadow flex flex-col justify-center">
                     <h2 class="font-headline text-4xl text-primary mb-6 italic">Un base estratégica.</h2>
-                    <p class="font-body text-lg text-secondary leading-relaxed">
+                    <p class="font-body text-lg text-secondary leading-relaxed" data-cms="properties.san-andres.description_long">
                         Situado en una de las zonas con mejor acceso logístico de la ciudad, el Apartamento San Andrés redefine el concepto de "pied-à-terre" para el profesional moderno. Recientemente renovado con un enfoque en la sostenibilidad y el aprovechamiento solar, ofrece un ambiente cálido y productivo para quenes necesitan una base estable en Calatayud.
                     </p>
                 </div>
@@ -126,6 +126,69 @@
                         <h3 class="font-headline text-3xl text-primary mb-2">Parking Fácil</h3>
                         <p class="font-body text-sm text-secondary">Zona de aparcamiento disponible en las inmediaciones directas.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-24 bg-surface-container-low px-8 border-t border-primary/5">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="font-headline text-4xl text-primary mb-6 italic">Galería Completa</h2>
+            <p class="font-body text-secondary mb-12">Recorrido detallado por nuestro apartamento en la zona de San Andrés.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Highlight -->
+                <div class="col-span-2 row-span-2 aspect-square md:aspect-auto bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.0.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.1.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.2.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.3.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.4.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+
+                <!-- Kitchen -->
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.5.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="col-span-2 aspect-video bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.6.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.7.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+
+                <!-- Rooms -->
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.8.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.9.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.10.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.11.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+
+                <!-- Services -->
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.12.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.13.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
+                </div>
+                <div class="aspect-square bg-surface-container rounded-xl flex items-center justify-center editorial-shadow overflow-hidden">
+                    <img data-cms="properties.san-andres.gallery.14.src" class="w-full h-full object-cover" src="img/andres-1.jpg">
                 </div>
             </div>
         </div>
@@ -155,38 +218,20 @@
     </div>
 </footer>
 
+<script src="js/cms-loader.js"></script>
+
+<!-- Netlify Identity Widget -->
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-    // Initialize Calendar
-    flatpickr("#property-dates", {
-        mode: "range",
-        minDate: "today",
-        dateFormat: "d/m/Y",
-        locale: {
-            rangeSeparator: " hasta "
-        }
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
     });
-
-    // Handle Property Consultation
-    function handlePropertyConsult() {
-        const property = "Apartamento San Andrés";
-        const dates = document.getElementById('property-dates').value;
-        
-        if(!dates) {
-            alert("Por favor, seleccione las fechas para su estancia en " + property);
-            document.getElementById('property-dates').focus();
-            return;
-        }
-
-        const subject = encodeURIComponent("Reserva - " + property);
-        const body = encodeURIComponent(
-            "Hola,\n\nDeseo consultar la disponibilidad para mi estancia en:\n" +
-            "Vivienda: " + property + "\n" +
-            "Fechas elegidas: " + dates + "\n\n" +
-            "Por favor, facilítenme más información sobre tarifas y proceso de reserva.\n\nSaludos."
-        );
-        
-        window.location.href = "mailto:alquilercalatayud@hotmail.com?subject=" + subject + "&body=" + body;
-    }
+  }
 </script>
 
 </body>
