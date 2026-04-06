@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: https://github.com/Multiservicios-Borgil/Alquilercalatayud-web # Será actualizado por el usuario
+  name: git-gateway
   branch: main
-  base_url: https://api.github.com
 
 media_folder: "img"
 public_folder: "img"
