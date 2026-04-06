@@ -4,7 +4,9 @@
     "contact": {
       "phone": "+34 633 202 853",
       "email": "alquilercalatayud@hotmail.com"
-    }
+    },
+    "email": "alquilercalatayud@hotmail.com",
+    "phone": "633202853"
   },
   "home": {
     "hero": {
@@ -70,36 +72,69 @@
     "sancho-gil-apt": {
       "name": "Apartamento Sancho y Gil",
       "rating": "4.95",
-      "tags": ["Nuevo Diseño", "WiFi Incluido"],
+      "tags": [
+        "Nuevo Diseño",
+        "WiFi Incluido"
+      ],
       "location": "Casco Histórico • Cerca de Santa María",
       "description_long": "Apartamento moderno en el corazón histórico de Calatayud. Ideal para estancias profesionales.",
       "gallery": [
-        {"title": "Imagen Principal", "src": "img/sancho-gil-1.jpg"},
-        {"title": "Salón", "src": "img/sancho-gil-2.jpg"}
+        {
+          "title": "Imagen Principal",
+          "src": "img/sancho-gil-1.jpg"
+        },
+        {
+          "title": "Salón",
+          "src": "img/sancho-gil-2.jpg"
+        }
       ],
-      "amenities": ["WiFi Alta Velocidad", "Cocina Completa", "Zona de Trabajo"]
+      "amenities": [
+        "WiFi Alta Velocidad",
+        "Cocina Completa",
+        "Zona de Trabajo"
+      ]
     },
     "sancho-gil-duplex": {
       "name": "Duplex Sancho y Gil",
       "rating": "4.98",
-      "tags": ["Ideal Familias", "2 Baños"],
+      "tags": [
+        "Ideal Familias",
+        "2 Baños"
+      ],
       "location": "Dos Plantas • Diseño Contemporáneo",
       "description_long": "Espacioso duplex con dos plantas, diseñado para ofrecer el máximo confort posible.",
       "gallery": [
-        {"title": "Salón / Planta Baja", "src": "img/duplex-1.jpg"}
+        {
+          "title": "Salón / Planta Baja",
+          "src": "img/duplex-1.jpg"
+        }
       ],
-      "amenities": ["Dos Baños", "Terraza Privada", "Climatización"]
+      "amenities": [
+        "Dos Baños",
+        "Terraza Privada",
+        "Climatización"
+      ]
     },
     "san-andres": {
       "name": "Apartamento San Andrés",
       "rating": "4.92",
-      "tags": ["Más Solicitado", "Confort SAT"],
+      "tags": [
+        "Más Solicitado",
+        "Confort SAT"
+      ],
       "location": "Zona San Andrés • Muy Luminoso",
       "description_long": "Ubicación estratégica en la zona de San Andrés, cerca de servicios y transporte.",
       "gallery": [
-        {"title": "Salón Comedor", "src": "img/andres-1.jpg"}
+        {
+          "title": "Salón Comedor",
+          "src": "img/andres-1.jpg"
+        }
       ],
-      "amenities": ["Parking Fácil", "Luz Natural", "Cerca de Polígonos"]
+      "amenities": [
+        "Parking Fácil",
+        "Luz Natural",
+        "Cerca de Polígonos"
+      ]
     }
   }
 }
